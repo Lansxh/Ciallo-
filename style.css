@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+.aixin {
+    position: absolute;
+    transform: translate(0px, 0px) scale(1);
+    transition: all 0.7s ease-out;
+}
+
+.aixin::before,
+.aixin::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    height: 16px;
+    width: 10px;
+    background-color: inherit;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.aixin::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+/*生成向上飘动的Ciallo～(∠・ω< )⌒☆*/
+body {
+    overflow: hidden;
+}
+
+.text-animation {
+    position: absolute;
+    font-size: 24px;
+    color: #003cff; /* 文本颜色 */
+    animation: textAnimation 1s ease-out;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50px) scale(1);
+    }
+}
+/*ciallo*/
+body {
+    overflow: hidden;
+}
+
+.text-animation {
+    position: absolute;
+    font-size: 24px;
+    color: #0066ff; /* 文本颜色 */
+    animation: textAnimation 1s ease-out;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100px) scale(1);
+    }
+}
+/*文本随机飘入*/
+body {
+    overflow: hidden;
+}
+
+.text-float {
+    position: absolute;
+    white-space: nowrap;
+    opacity: 1;
+    animation: floatAnimation 10s linear infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

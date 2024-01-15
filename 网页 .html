@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+img{
+height: 200px;
+width: 344px;
+object-fit: fill;
+border-radius: 20px;
+transition: all .2s ease-out;
+}
+.img{
+border:5px solid saddlebrown;
+border-radius: 20px;
+background-color: rgba(255,255,255,1);
+box-shadow:18px 18px 30px rgba(0,0,0,0.2),-18px -18px 30px rgba(255, 255, 255, 1);
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all .2s ease-out;
+}
+.img:hover{
+    cursor:pointer;
+    box-shadow:0 0 0 rgba(0,0,0,0.2),0 0 0 rgba(255,255,255,0.8),
+    inset 18px 18px 30px rgba(0,0,0,0.1),
+    inset -18px -18px 30px rgba(255,255,255,1);
+
+}
+.img:hover img{
+    width: 326.8px;
+    height: 190px;
+}
+body{
+/*background-image: url('千恋万花.jpg');*/
+background-attachment:fixed;
+background-color: rgb(255, 255, 255);
+background-repeat: no-repeat;
+background-size: cover;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="img">
+        <a href="网页2.html">
+        <img src="柚子社图标.png">
+        </a>
+    </div>
+
+</body>
+</html>
